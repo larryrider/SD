@@ -1,0 +1,3 @@
+volumen=10
+ultimaFecha=17/10/2016 03:03:52
+luz=#008000

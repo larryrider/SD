@@ -1,0 +1,8 @@
+c:\users\larry\documents\visual studio 2015\Projects\Cifrado\Cifrado\bin\Debug\Cifrado.exe.config
+c:\users\larry\documents\visual studio 2015\Projects\Cifrado\Cifrado\bin\Debug\Cifrado.exe
+c:\users\larry\documents\visual studio 2015\Projects\Cifrado\Cifrado\bin\Debug\Cifrado.pdb
+c:\users\larry\documents\visual studio 2015\Projects\Cifrado\Cifrado\obj\Debug\Cifrado.Form1.resources
+c:\users\larry\documents\visual studio 2015\Projects\Cifrado\Cifrado\obj\Debug\Cifrado.Properties.Resources.resources
+c:\users\larry\documents\visual studio 2015\Projects\Cifrado\Cifrado\obj\Debug\Cifrado.csproj.GenerateResource.Cache
+c:\users\larry\documents\visual studio 2015\Projects\Cifrado\Cifrado\obj\Debug\Cifrado.exe
+c:\users\larry\documents\visual studio 2015\Projects\Cifrado\Cifrado\obj\Debug\Cifrado.pdb

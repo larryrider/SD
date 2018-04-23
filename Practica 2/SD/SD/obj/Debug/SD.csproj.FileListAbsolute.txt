@@ -1,0 +1,13 @@
+c:\users\larry\documents\visual studio 2015\Projects\SD\SD\bin\Debug\SD.exe.config
+c:\users\larry\documents\visual studio 2015\Projects\SD\SD\bin\Debug\SD.exe
+c:\users\larry\documents\visual studio 2015\Projects\SD\SD\bin\Debug\SD.pdb
+c:\users\larry\documents\visual studio 2015\Projects\SD\SD\obj\Debug\SD.csprojResolveAssemblyReference.cache
+c:\users\larry\documents\visual studio 2015\Projects\SD\SD\obj\Debug\SD.Form1.resources
+c:\users\larry\documents\visual studio 2015\Projects\SD\SD\obj\Debug\SD.Properties.Resources.resources
+c:\users\larry\documents\visual studio 2015\Projects\SD\SD\obj\Debug\SD.csproj.GenerateResource.Cache
+c:\users\larry\documents\visual studio 2015\Projects\SD\SD\obj\Debug\SD.exe
+c:\users\larry\documents\visual studio 2015\Projects\SD\SD\obj\Debug\SD.pdb
+C:\Users\larry\Documents\Visual Studio 2015\Projects\SD\SD\obj\Debug\SD.Form2.resources
+C:\Users\Larry\Dropbox\UA 4º AÑO\SD Practicas\Practica2SD-2016-12-23\SD\SD\bin\Debug\SD.exe.config
+C:\Users\Larry\Dropbox\UA 4º AÑO\SD Practicas\Practica2SD-2016-12-23\SD\SD\obj\Debug\SD.exe
+C:\Users\Larry\Dropbox\UA 4º AÑO\SD Practicas\Practica2SD-2016-12-23\SD\SD\obj\Debug\SD.pdb

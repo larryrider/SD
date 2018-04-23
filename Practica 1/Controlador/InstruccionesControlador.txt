@@ -1,0 +1,16 @@
+
+para saber la ruta absoluta: 
+
+pwd
+
+export CLASSPATH=$CLASSPATH:/home/guest/cliente.jar
+
+y luego compilar con javac el hilo
+
+
+** el cliente.jar se saca del RMI
+
+
+ejecutar con
+
+java -Djava.security.policy=registrar.policy ControladorConcurrente

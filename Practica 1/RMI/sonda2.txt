@@ -1,0 +1,3 @@
+volumen=60
+ultimaFecha=17/10/2016 02:54:46
+luz=#FF0000

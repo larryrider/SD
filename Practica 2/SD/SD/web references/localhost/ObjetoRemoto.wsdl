@@ -1,0 +1,306 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:ns="http://master" xmlns:ns1="http://org.apache.axis2/xsd" targetNamespace="http://master" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:documentation>
+		Please Type your service description here
+	</wsdl:documentation>
+  <wsdl:types>
+    <xs:schema attributeFormDefault="qualified" elementFormDefault="qualified" targetNamespace="http://master">
+      <xs:element name="log">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element minOccurs="0" name="accion" nillable="true" type="xs:string" />
+            <xs:element minOccurs="0" name="ip" nillable="true" type="xs:string" />
+            <xs:element minOccurs="0" name="usuario" nillable="true" type="xs:string" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="getVolumen">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element minOccurs="0" name="ip" nillable="true" type="xs:string" />
+            <xs:element minOccurs="0" name="usu" nillable="true" type="xs:string" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="getVolumenResponse">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element minOccurs="0" name="return" nillable="true" type="xs:string" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="getFecha">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element minOccurs="0" name="ip" nillable="true" type="xs:string" />
+            <xs:element minOccurs="0" name="usu" nillable="true" type="xs:string" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="getFechaResponse">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element minOccurs="0" name="return" nillable="true" type="xs:string" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="getUltimaFecha">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element minOccurs="0" name="ip" nillable="true" type="xs:string" />
+            <xs:element minOccurs="0" name="usu" nillable="true" type="xs:string" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="getUltimaFechaResponse">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element minOccurs="0" name="return" nillable="true" type="xs:string" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="getLuz">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element minOccurs="0" name="ip" nillable="true" type="xs:string" />
+            <xs:element minOccurs="0" name="usu" nillable="true" type="xs:string" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="getLuzResponse">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element minOccurs="0" name="return" nillable="true" type="xs:string" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="setLuz">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element minOccurs="0" name="luzNueva" nillable="true" type="xs:string" />
+            <xs:element minOccurs="0" name="ip" nillable="true" type="xs:string" />
+            <xs:element minOccurs="0" name="usu" nillable="true" type="xs:string" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+    </xs:schema>
+  </wsdl:types>
+  <wsdl:message name="getVolumenRequest">
+    <wsdl:part name="parameters" element="ns:getVolumen" />
+  </wsdl:message>
+  <wsdl:message name="getVolumenResponse">
+    <wsdl:part name="parameters" element="ns:getVolumenResponse" />
+  </wsdl:message>
+  <wsdl:message name="getLuzRequest">
+    <wsdl:part name="parameters" element="ns:getLuz" />
+  </wsdl:message>
+  <wsdl:message name="getLuzResponse">
+    <wsdl:part name="parameters" element="ns:getLuzResponse" />
+  </wsdl:message>
+  <wsdl:message name="logRequest">
+    <wsdl:part name="parameters" element="ns:log" />
+  </wsdl:message>
+  <wsdl:message name="getUltimaFechaRequest">
+    <wsdl:part name="parameters" element="ns:getUltimaFecha" />
+  </wsdl:message>
+  <wsdl:message name="getUltimaFechaResponse">
+    <wsdl:part name="parameters" element="ns:getUltimaFechaResponse" />
+  </wsdl:message>
+  <wsdl:message name="getFechaRequest">
+    <wsdl:part name="parameters" element="ns:getFecha" />
+  </wsdl:message>
+  <wsdl:message name="getFechaResponse">
+    <wsdl:part name="parameters" element="ns:getFechaResponse" />
+  </wsdl:message>
+  <wsdl:message name="setLuzRequest">
+    <wsdl:part name="parameters" element="ns:setLuz" />
+  </wsdl:message>
+  <wsdl:portType name="ObjetoRemotoPortType">
+    <wsdl:operation name="getVolumen">
+      <wsdl:input wsaw:Action="urn:getVolumen" message="ns:getVolumenRequest" />
+      <wsdl:output wsaw:Action="urn:getVolumenResponse" message="ns:getVolumenResponse" />
+    </wsdl:operation>
+    <wsdl:operation name="getLuz">
+      <wsdl:input wsaw:Action="urn:getLuz" message="ns:getLuzRequest" />
+      <wsdl:output wsaw:Action="urn:getLuzResponse" message="ns:getLuzResponse" />
+    </wsdl:operation>
+    <wsdl:operation name="log">
+      <wsdl:input wsaw:Action="urn:log" message="ns:logRequest" />
+    </wsdl:operation>
+    <wsdl:operation name="getUltimaFecha">
+      <wsdl:input wsaw:Action="urn:getUltimaFecha" message="ns:getUltimaFechaRequest" />
+      <wsdl:output wsaw:Action="urn:getUltimaFechaResponse" message="ns:getUltimaFechaResponse" />
+    </wsdl:operation>
+    <wsdl:operation name="getFecha">
+      <wsdl:input wsaw:Action="urn:getFecha" message="ns:getFechaRequest" />
+      <wsdl:output wsaw:Action="urn:getFechaResponse" message="ns:getFechaResponse" />
+    </wsdl:operation>
+    <wsdl:operation name="setLuz">
+      <wsdl:input wsaw:Action="urn:setLuz" message="ns:setLuzRequest" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="ObjetoRemotoSoap11Binding" type="ns:ObjetoRemotoPortType">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="getVolumen">
+      <soap:operation soapAction="urn:getVolumen" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getLuz">
+      <soap:operation soapAction="urn:getLuz" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="log">
+      <soap:operation soapAction="urn:log" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+    </wsdl:operation>
+    <wsdl:operation name="getUltimaFecha">
+      <soap:operation soapAction="urn:getUltimaFecha" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getFecha">
+      <soap:operation soapAction="urn:getFecha" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="setLuz">
+      <soap:operation soapAction="urn:setLuz" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="ObjetoRemotoSoap12Binding" type="ns:ObjetoRemotoPortType">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="getVolumen">
+      <soap12:operation soapAction="urn:getVolumen" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getLuz">
+      <soap12:operation soapAction="urn:getLuz" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="log">
+      <soap12:operation soapAction="urn:log" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+    </wsdl:operation>
+    <wsdl:operation name="getUltimaFecha">
+      <soap12:operation soapAction="urn:getUltimaFecha" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getFecha">
+      <soap12:operation soapAction="urn:getFecha" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="setLuz">
+      <soap12:operation soapAction="urn:setLuz" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="ObjetoRemotoHttpBinding" type="ns:ObjetoRemotoPortType">
+    <http:binding verb="POST" />
+    <wsdl:operation name="getVolumen">
+      <http:operation location="getVolumen" />
+      <wsdl:input>
+        <mime:content part="parameters" type="application/xml" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:content part="parameters" type="application/xml" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getLuz">
+      <http:operation location="getLuz" />
+      <wsdl:input>
+        <mime:content part="parameters" type="application/xml" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:content part="parameters" type="application/xml" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="log">
+      <http:operation location="log" />
+      <wsdl:input>
+        <mime:content part="parameters" type="application/xml" />
+      </wsdl:input>
+    </wsdl:operation>
+    <wsdl:operation name="getUltimaFecha">
+      <http:operation location="getUltimaFecha" />
+      <wsdl:input>
+        <mime:content part="parameters" type="application/xml" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:content part="parameters" type="application/xml" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getFecha">
+      <http:operation location="getFecha" />
+      <wsdl:input>
+        <mime:content part="parameters" type="application/xml" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:content part="parameters" type="application/xml" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="setLuz">
+      <http:operation location="setLuz" />
+      <wsdl:input>
+        <mime:content part="parameters" type="application/xml" />
+      </wsdl:input>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="ObjetoRemoto">
+    <wsdl:port name="ObjetoRemotoHttpSoap11Endpoint" binding="ns:ObjetoRemotoSoap11Binding">
+      <soap:address location="http://localhost:8080/SD/services/ObjetoRemoto.ObjetoRemotoHttpSoap11Endpoint/" />
+    </wsdl:port>
+    <wsdl:port name="ObjetoRemotoHttpSoap12Endpoint" binding="ns:ObjetoRemotoSoap12Binding">
+      <soap12:address location="http://localhost:8080/SD/services/ObjetoRemoto.ObjetoRemotoHttpSoap12Endpoint/" />
+    </wsdl:port>
+    <wsdl:port name="ObjetoRemotoHttpEndpoint" binding="ns:ObjetoRemotoHttpBinding">
+      <http:address location="http://localhost:8080/SD/services/ObjetoRemoto.ObjetoRemotoHttpEndpoint/" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

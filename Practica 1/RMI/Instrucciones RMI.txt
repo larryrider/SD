@@ -1,0 +1,28 @@
+
+Compilar los .java
+
+javac InterfazRemoto.java Registro.java ObjetoRemoto.java -d .
+
+
+
+Luego hay que sacar el .jar necesario en el controlador:
+
+rmic ObjetoRemoto
+
+jar cvf cliente.jar InterfazRemoto.class ObjetoRemoto_Stub.class
+
+
+
+
+
+Registrar el objeto: 
+
+rmiregistry -J-Djava.security.policy=registrar.policy
+
+-- Se queda quieto el terminal
+
+
+En otro:
+
+
+java -Djava.security.policy=registrar.policy Registro
